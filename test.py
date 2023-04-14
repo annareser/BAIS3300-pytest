@@ -1,4 +1,4 @@
-#test.py
+#test_app.py
 
 # assert expression
 ## if true nothing happens
