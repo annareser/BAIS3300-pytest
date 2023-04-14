@@ -23,7 +23,7 @@ def client():
 
 
 # Unit Tests
-def test_loan_discount_factor():
+def test_calculateDiscountFactor(self):
     """
     GIVEN a user enters their loan details
     WHEN the loan object's calculateDiscountFactor method is called
@@ -38,7 +38,7 @@ def test_loan_discount_factor():
     )  # approx two decimal places
 
 
-def test_loan_payment():
+def test_calculateLoanPmt(self):
     """
     GIVEN a user enters their loan details
     WHEN the loan object's calculateLoanPmt method is called
@@ -67,7 +67,7 @@ def test_home_page(client):
     assert b"Loan Calculator" in response.data
 
 
-def test_calculate_loan_payment(client):
+def test_getLoanPmt(client):
     """
     GIVEN a user enters their loan details
     WHEN the user clicks the calculate button
@@ -83,7 +83,7 @@ def test_calculate_loan_payment(client):
 
 
 # Integration Test
-def test_full_loan_calculation(client):
+def test_collectLoanDetails(client):
     """
     GIVEN a user enters their loan details
     WHEN the user clicks the calculate button
